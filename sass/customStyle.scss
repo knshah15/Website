@@ -1,0 +1,134 @@
+/* for About Us / Mission page */
+
+.topspacer_au {
+    padding-top: 65px;
+    padding-bottom: 20px;
+}
+
+.topheadingbox_au {
+    padding-top: 8px;
+    padding-bottom: 40px;
+    margin-bottom: 25px;
+    color: black;
+    background-color: #fcfcfc;
+    border-style: dotted;
+    border-width: 1px;
+}
+
+.leftmarginspacer_au {
+    margin-left: 25px;
+    margin-right: 70px;
+    background-color: #fcfcfc;
+}
+
+.maintextbottommargin_au {
+    padding-top: 1px;
+    padding-bottom: 20px;
+}
+
+/* for Contact page */
+
+.cuspacerbox {
+    padding-top: 8px;
+    padding-bottom: 40px;
+    margin-bottom: 15px;
+    color: black;
+    background-color: #ffffff;
+}
+
+.cutopheadingbox {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: black;
+    background-color: #eee;
+}
+
+.culeftmarginspacer {
+    margin-left: 40px;
+    margin-right: 160px;
+    background-color: #eee;
+}
+
+.cumaintextbottommargin {
+    padding-top: 1px;
+    padding-bottom: 20px;
+}
+
+.center-block {
+    float: none;
+}
+#homePageHeader {
+    background-image: url("../images/home.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    .bkgImgTint {
+        background-color: rgba(0, 0, 0, 0.6);
+        min-height: 400px;
+    }
+    .headerCopy {
+        padding: 3rem;
+        .bulletPoints {
+            padding: 3rem 0 0 1rem;
+        }
+        h1 {
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 34px;
+            color: #ffffff;
+        }
+        h2 {
+            font-family: 'Noto Sans', sans-serif;
+            color: #ffffff;
+        }
+        h4 {
+            font-family: 'Noto Sans', sans-serif;
+            color: #ffffff;
+        }
+        .morrisCounty {
+            color: #ffffff;
+            padding-top: 3rem;
+        }
+    }
+}
+
+.contntThumbnailContainer {
+    display: flex;
+    .thumbnail {
+        flex: 1;
+    }
+}
+.aboutMe {
+    margin-bottom: 5rem;
+    img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+//small screen
+@media (max-width: 40em) {
+    .contntThumbnailContainer {
+        padding: 5rem 2rem 0 2rem;
+        flex-direction: column;
+        .thumbnail {
+            margin: 1rem 0;
+        }
+    }
+    .aboutMe {
+        padding: 5rem 2rem 0 2rem;
+    }
+}
+//medium screen
+@media (min-width: 40.063em) {
+    .contntThumbnailContainer {
+        padding: 5rem 5rem 0 5rem;
+        flex-direction: row;
+        .thumbnail {
+            margin: 0 1rem;
+        }
+    }
+    .aboutMe {
+        padding: 5rem 6rem 0 6rem;
+    }
+}

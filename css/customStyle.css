@@ -1,0 +1,161 @@
+/* for About Us / Mission page */
+/* line 3, ../sass/customStyle.scss */
+.topspacer_au {
+  padding-top: 65px;
+  padding-bottom: 20px;
+}
+
+/* line 8, ../sass/customStyle.scss */
+.topheadingbox_au {
+  padding-top: 8px;
+  padding-bottom: 40px;
+  margin-bottom: 25px;
+  color: black;
+  background-color: #fcfcfc;
+  border-style: dotted;
+  border-width: 1px;
+}
+
+/* line 18, ../sass/customStyle.scss */
+.leftmarginspacer_au {
+  margin-left: 25px;
+  margin-right: 70px;
+  background-color: #fcfcfc;
+}
+
+/* line 24, ../sass/customStyle.scss */
+.maintextbottommargin_au {
+  padding-top: 1px;
+  padding-bottom: 20px;
+}
+
+/* for Contact page */
+/* line 31, ../sass/customStyle.scss */
+.cuspacerbox {
+  padding-top: 8px;
+  padding-bottom: 40px;
+  margin-bottom: 15px;
+  color: black;
+  background-color: #ffffff;
+}
+
+/* line 39, ../sass/customStyle.scss */
+.cutopheadingbox {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  color: black;
+  background-color: #eee;
+}
+
+/* line 47, ../sass/customStyle.scss */
+.culeftmarginspacer {
+  margin-left: 40px;
+  margin-right: 160px;
+  background-color: #eee;
+}
+
+/* line 53, ../sass/customStyle.scss */
+.cumaintextbottommargin {
+  padding-top: 1px;
+  padding-bottom: 20px;
+}
+
+/* line 58, ../sass/customStyle.scss */
+.center-block {
+  float: none;
+}
+
+/* line 61, ../sass/customStyle.scss */
+#homePageHeader {
+  background-image: url("../images/home.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* line 66, ../sass/customStyle.scss */
+#homePageHeader .bkgImgTint {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 400px;
+}
+/* line 70, ../sass/customStyle.scss */
+#homePageHeader .headerCopy {
+  padding: 3rem;
+}
+/* line 72, ../sass/customStyle.scss */
+#homePageHeader .headerCopy .bulletPoints {
+  padding: 3rem 0 0 1rem;
+}
+/* line 75, ../sass/customStyle.scss */
+#homePageHeader .headerCopy h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 34px;
+  color: #ffffff;
+}
+/* line 80, ../sass/customStyle.scss */
+#homePageHeader .headerCopy h2 {
+  font-family: 'Noto Sans', sans-serif;
+  color: #ffffff;
+}
+/* line 84, ../sass/customStyle.scss */
+#homePageHeader .headerCopy h4 {
+  font-family: 'Noto Sans', sans-serif;
+  color: #ffffff;
+}
+/* line 88, ../sass/customStyle.scss */
+#homePageHeader .headerCopy .morrisCounty {
+  color: #ffffff;
+  padding-top: 3rem;
+}
+
+/* line 95, ../sass/customStyle.scss */
+.contntThumbnailContainer {
+  display: flex;
+}
+/* line 97, ../sass/customStyle.scss */
+.contntThumbnailContainer .thumbnail {
+  flex: 1;
+}
+
+/* line 101, ../sass/customStyle.scss */
+.aboutMe {
+  margin-bottom: 5rem;
+}
+/* line 103, ../sass/customStyle.scss */
+.aboutMe img {
+  width: 120px;
+  height: 120px;
+}
+
+@media (max-width: 40em) {
+  /* line 111, ../sass/customStyle.scss */
+  .contntThumbnailContainer {
+    padding: 5rem 2rem 0 2rem;
+    flex-direction: column;
+  }
+  /* line 114, ../sass/customStyle.scss */
+  .contntThumbnailContainer .thumbnail {
+    margin: 1rem 0;
+  }
+
+  /* line 118, ../sass/customStyle.scss */
+  .aboutMe {
+    padding: 5rem 2rem 0 2rem;
+  }
+}
+@media (min-width: 40.063em) {
+  /* line 124, ../sass/customStyle.scss */
+  .contntThumbnailContainer {
+    padding: 5rem 5rem 0 5rem;
+    flex-direction: row;
+  }
+  /* line 127, ../sass/customStyle.scss */
+  .contntThumbnailContainer .thumbnail {
+    margin: 0 1rem;
+  }
+
+  /* line 131, ../sass/customStyle.scss */
+  .aboutMe {
+    padding: 5rem 6rem 0 6rem;
+  }
+}

@@ -8,7 +8,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/mystyles.css" rel="stylesheet">
+        <!-- <link href="css/mystyles.css" rel="stylesheet"> -->
+        <link href="css/customStyle.css" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -19,122 +22,143 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">Skill Seeker</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Training Services<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-header">Application Training</li>
-                                <li><a href="excel.html">Practical Microsoft Excel</a></li>
-                                <li><a href="powerpoint.html">Practical Microsoft PowerPoint</a></li>
-                                <li><a href="word.html">Practical Microsoft Word</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li class="dropdown-header">Computing and the Web</li>
-                                <li><a href="computeressentials.html">Computer and Web Essentials</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Career Services<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="resumes.html">Resumes and Cover Letters</a></li>
-                                <li><a href="interviews.html">Interview Coaching</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="partnerships.html">Training for Businesses</a></li>
-                        <li><a href="getintouch.html">Get in Touch</a></li>
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div>
-        </nav>
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="homePageHeader">
+                    <div class="bkgImgTint">
+                        <div class="row">
+                            <div class="col-sm-10 center-block text-center">
+                                <div class="headerCopy">
+                                    <h1>Enhance Your Skills, Quickly and Affordably.</h1>
+                                    <h2>One-on-one training in essential computer and web skills, focused on real-world business tasks</h2>
 
-        <div class="container theme-showcase" role="main">
+                                    <div class="bulletPoints text-left">
+                                        <h4>Excel, PowerPoint and Word for <b>real-world uses</b></h4>
+                                        <h4>Learn to use these programs for data analysis, presentations, business cases, and more</h4>
+                                        <h4>Using a computer to building a website</h4>
+                                        <h4>Resume and interview coaching to prepare you to land your next job</h4>
+                                    </div>
+                                    <div class="morrisCounty text-right">
+                                        <i>Proudly serving the Morris County community and surrounding areas.</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="jumbotron">
-                <div class="container">
-                    <h2>Enhance Your Skills, Quickly and Affordably.</h2>
-                    <h4>One-on-one training in essential computer and web skills, focused on real-world business tasks</h4>
-                    <ul style="list-style-type:square">
-                        <h4>&#8226 Excel, PowerPoint and Word for <b>real-world uses</b></h4>
-                        <h4>&#8226 Learn to use these programs for data analysis, presentations, business cases, and more</h4>
-                        <h4>&#8226 Using a computer to building a website</h4>
-                        <h4>&#8226 Resume and interview coaching to prepare you to land your next job</h4>
-                    </ul>
-                    <p><a class="btn btn-primary btn-md" href="#" role="button">Learn more &raquo;</a></p>
+                    </div>
                 </div>
             </div>
-
-            <div class="alert alert-info" role="alert">
-                <i>Proudly serving the Morris County community and surrounding areas.</i>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><b>Training Services</b></h3>
-                        </div>
-                        <div class="panel-body">
-                            <p>&#8226 Affordardable, one-on-one tutoring</p>
-                            <p>&#8226 Practical Uses of Excel, PowerPoint and Word</p>
-                            <p>&#8226 Training program designed to meet your goals</p>
-                            <p>&#8226 Assignments simulate real-world projects</p>
-                            <p>&#8226 Absolute beginners to advanced users</p>
-                            <a href="#" class="btn btn-md btn-primary">Default</a>
-                        </div>
-                    </div>
-                </div><!-- /.col-sm-4 -->
-                <div class="col-sm-4">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><b>Career Services</b></h3>
-                        </div>
-                        <div class="panel-body">
-                            <p>&#8226 Apply and interview with confidence</p>
-                            <p>&#8226 Resume and cover-letter coaching</p>
-                            <p>&#8226 LinkedIn profile optimization</p>
-                            <p>&#8226 In-depth interview preparation</p>
-                            <p>&#8226 For all industries and job functions</p>
-                            <a href="#" class="btn btn-md btn-success">Default</a>
-                        </div>
-                    </div>
-                </div><!-- /.col-sm-4 -->
-                <div class="col-sm-4">
-                    <div class="panel panel-info">
-                        <div class="panel-heading">
-                            <h3 class="panel-title"><b>Corporate Training</b></h3>
-                        </div>
-                        <div class="panel-body">
-                            <p>&#8226 Cost-effective group training</p>
-                            <p>&#8226 Close gaps in essential skills quickly</p>
-                            <p>&#8226 Customized to the needs of your business</p>
-                            <p>&#8226 Training performed on-site</p>
-                            <p>&#8226 Single-day or multi-week engagements</p>
-                            <a href="#" class="btn btn-md btn-info">Default</a>
-                        </div>
-                    </div>
-                </div><!-- /.col-sm-4 -->
-            </div>
-
-            <hr>
-
-            <footer>
-                <p>&copy; 2017 Skill Seeker Learning Solutions LLC</p>
-            </footer>
-
         </div>
 
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="contntThumbnailContainer">
+                    <div class="thumbnail">
+                        <img alt="100%x200" src="images/excel.jpg" data-holder-rendered="true">
+                        <div class="caption">
+                            <h3>Practical Microsoft Excel Training (Mac or PC)</h3>
+                            <p>Strong Excel skills are important in almost every industry and job function. My training program teaches you how to use Excel to accomplish tasks you will encounter on the job.Here are a sample of topic areas that I can teach you. I will work with you to understand your goals, and will design a training program that covers all of the topics you wish to master.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="excel">View More</button>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail">
+                        <img alt="100%x200" data-src="holder.js/100%x200" src="images/powerpoint.jpg" data-holder-rendered="true">
+                        <div class="caption">
+                            <h3>Practical Microsoft PowerPoint Training (Mac or PC)</h3>
+                            <p>PowerPoint is used universally to convey information. Go beyond the basics and learn the best-practices and guidelines to create powerful and compelling presentations for sales, marketing and other purposes. ere are a sample of topic areas that I can teach you. My training is focused on practical uses of PowerPoint. I have used PowerPoint extensively for sales, marketing and other business presentations. I want to show you how I learned to create powerful, compelling presentations that get your point across.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="powerpoint">View More</button>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail">
+                        <img alt="100%x200" data-src="holder.js/100%x200" src="images/word.jpg" data-holder-rendered="true">
+
+                        <div class="caption">
+                            <h3>Practical Microsoft Word Training (Mac or PC)</h3>
+                            <p>Microsoft Word is powerful if you go beyond the basics, but can also be frustrating when working with large documents and graphics. My training will cover the basics and go beyond to show you useful functionality based on your interests. Here are a sample of topic areas that I can teach you. My training goes beyond functionality to real-world business uses of the program. If you are working through a proposal, business case, or other complicated document, I can share the best practices I learned in my career to help you create a stronger document.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="word">View More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="contntThumbnailContainer">
+                    <div class="thumbnail">
+                        <img alt="100%x200" src="images/partnership.jpg" data-holder-rendered="true">
+                        <div class="caption">
+                            <h3>Corporate Training Services</h3>
+                            <p>Strong Excel skills are important in almost every industry and job function. My training program teaches you how to use Excel to accomplish tasks you will encounter on the job.Here are a sample of topic areas that I can teach you. I will work with you to understand your goals, and will design a training program that covers all of the topics you wish to master.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="partnership">View More</button>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail">
+                        <img alt="100%x200" data-src="holder.js/100%x200" src="images/computerskills.jpg" data-holder-rendered="true">
+                        <div class="caption">
+                            <h3>Computer Essentials, Website Creation and Online Marketing</h3>
+                            <p>PowerPoint is used universally to convey information. Go beyond the basics and learn the best-practices and guidelines to create powerful and compelling presentations for sales, marketing and other purposes. ere are a sample of topic areas that I can teach you. My training is focused on practical uses of PowerPoint. I have used PowerPoint extensively for sales, marketing and other business presentations. I want to show you how I learned to create powerful, compelling presentations that get your point across.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="computerskills">View More</button>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail">
+                        <img alt="100%x200" data-src="holder.js/100%x200" src="images/career.jpg" data-holder-rendered="true">
+
+                        <div class="caption">
+                            <h3>Does Your Resume Standout?</h3>
+                            <p>Microsoft Word is powerful if you go beyond the basics, but can also be frustrating when working with large documents and graphics. My training will cover the basics and go beyond to show you useful functionality based on your interests. Here are a sample of topic areas that I can teach you. My training goes beyond functionality to real-world business uses of the program. If you are working through a proposal, business case, or other complicated document, I can share the best practices I learned in my career to help you create a stronger document.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="career">View More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="media aboutMe">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="images/kunalimg.jpg" alt="Kunal Image">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">About Skill Seeker</h4>
+                        <p>My mission in founding Skill Seeker is to provide affordable training to people in the community who wish to increase their skills in the software applications most every business uses. My approach is to understand your personal goals and budget. From there, I will create a curriculum that fits your needs. For example, if you are entering a career that requires data analysis but have never used Excel, I will create exercises and examples that will get you to your goal quickly.</p>
+                        <p>Currently, my training is done one-on-one at your home or a location that is mutually convenient. I believe the best way to learn is to have someone beside you explaining concepts and taking the time to understand how you learn best. Whether you are a student, transitioning to a new career, or running your own business, I will train you to use Excel, PowerPoint, Word, and other programs, so that you can achieve whatever goal you have.</p>
+                        <p>Secondly, I want to share the success I have had in my career getting interviews and getting jobs. I will work with you to create a strong resume and cover letter that will separate you from other applicants. When it comes time to the interview, I'll coach you and conduct mock interviews so that you are prepared for whatever they may throw at you.</p>
+                        <p>I look forward to working with you!</p>
+
+                        <h3>Founder and Trainer</h3>
+                        <h4><b>Kunal Shah</b></h4>
+                        <p>I worked in the corporate world for 10 years in multiple industries and roles - from banking to software programming to digital marketing. In those 10 years I realized that no matter which company I was a part of, there were core skills that enabled me to perform strongly in whatever role I had.</p>
+                        <p>I have a passion for teaching, coaching and speaking. I decided to start Skiller Seeker to pursue these passions, and share the skills that brought me success in an affordable and efficient way.</p>
+                        <p>I earned my bachelor's degree in Economics at Rice University and later studied programming at Columbia University.</p>
+                        <p>I am located in Morris Plains, NJ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel"></h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <p class="modal-body-content"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="js/modal.js"></script>
     </body>
 </html>
