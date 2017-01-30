@@ -33,7 +33,7 @@ if ($_POST['submit']) {
             <form class="well form-horizontal" action="" method="post"  id="contact_form">
                 <fieldset>
                     <!-- Form Name -->
-                    <legend>Contact me to schedule training</legend>
+                    <legend>Contact Skill Seeker Training</legend>
                     <!-- Text input-->
                     <div class="form-group">
                         <label class="col-md-4 control-label">First Name</label>  
@@ -86,7 +86,7 @@ if ($_POST['submit']) {
                     </div>
                     <!-- Text area -->
                     <div class="form-group">
-                        <label class="col-md-4 control-label">Learning Goals</label>
+                        <label class="col-md-4 control-label">What are you interested in?</label>
                         <div class="col-md-4 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
