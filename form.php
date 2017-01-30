@@ -86,11 +86,11 @@ if ($_POST['submit']) {
                     </div>
                     <!-- Text area -->
                     <div class="form-group">
-                        <label class="col-md-4 control-label">What are you interested in?</label>
+                        <label class="col-md-4 control-label">Describe your area of interest</label>
                         <div class="col-md-4 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                                <textarea class="form-control" name="comment" placeholder="Learning Goals"></textarea>
+                                <textarea class="form-control" name="comment" placeholder="Example: Excel training..."></textarea>
                             </div>
                         </div>
                     </div>
