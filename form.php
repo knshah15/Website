@@ -1,6 +1,6 @@
 <?php
 if ($_POST['submit']) {
-    mail("kunal@skillseekertraining.com", "Form Submission",      
+    mail("kunal@eml.cc", "Form Submission",      
          "Name: ".$_POST['first_name']."
         LastName: ".$_POST['last_name']."
         Email: ".$_POST['email']."
