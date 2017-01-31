@@ -1,6 +1,6 @@
 <?php
 if ($_POST['submit']) {
-    mail("kunal@eml.cc", "Form Submission",      
+    mail("kunal@eml.cc", "Form Submission",
          "Name: ".$_POST['first_name']."
         LastName: ".$_POST['last_name']."
         Email: ".$_POST['email']."
@@ -36,7 +36,7 @@ if ($_POST['submit']) {
                     <legend>Contact Skill Seeker Training</legend>
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label">First Name</label>  
+                        <label class="col-md-4 control-label">First Name</label>
                         <div class="col-md-4 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -46,7 +46,7 @@ if ($_POST['submit']) {
                     </div>
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" >Last Name</label> 
+                        <label class="col-md-4 control-label" >Last Name</label>
                         <div class="col-md-4 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -56,7 +56,7 @@ if ($_POST['submit']) {
                     </div>
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label">E-Mail</label>  
+                        <label class="col-md-4 control-label">E-Mail</label>
                         <div class="col-md-4 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
@@ -66,7 +66,7 @@ if ($_POST['submit']) {
                     </div>
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label">Phone #</label>  
+                        <label class="col-md-4 control-label">Phone #</label>
                         <div class="col-md-4 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
@@ -76,7 +76,7 @@ if ($_POST['submit']) {
                     </div>
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-4 control-label">City</label>  
+                        <label class="col-md-4 control-label">City</label>
                         <div class="col-md-4 inputGroupContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>

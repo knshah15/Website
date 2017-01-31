@@ -1,3 +1,5 @@
+$noto-font:  'Noto Sans', sans-serif;
+
 /* for About Us / Mission page */
 
 .topspacer_au {
@@ -58,6 +60,7 @@
 .center-block {
     float: none;
 }
+
 #homePageHeader {
     background-image: url("../images/home.jpg");
     background-repeat: no-repeat;
@@ -73,41 +76,67 @@
             padding: 3rem 0 0 1rem;
         }
         h1 {
-            font-family: 'Noto Sans', sans-serif;
+            font-family: $noto-font;
             font-size: 34px;
             color: #ffffff;
         }
         h2 {
-            font-family: 'Noto Sans', sans-serif;
+            font-family: $noto-font;
             color: #ffffff;
         }
         h4 {
-            font-family: 'Noto Sans', sans-serif;
+            font-family: $noto-font;
             color: #ffffff;
         }
-        .morrisCounty {
-            color: #ffffff;
-            padding-top: 3rem;
+    }
+    .morrisCounty {
+        font-family: $noto-font;
+        color: #ffffff;
+        position: relative;
+        height: 100%;
+        span {
+            background-color: rgba(242, 222, 107, .6);
+            padding: 1rem;
+            border-radius: 3px;
+            border: 3px solid #ffffff;
+            position: absolute;
+            bottom: 3rem;
+            right: 5rem;
         }
     }
 }
 
 .contntThumbnailContainer {
     display: flex;
+    font-family: $noto-font;
     .thumbnail {
         flex: 1;
     }
 }
-.aboutMe {
-    margin-bottom: 5rem;
-    img {
-        width: 120px;
-        height: 120px;
-    }
+
+.aboutMe {margin: 3rem 6rem 3rem 6rem;
+    font-family: $noto-font;
+    background-color: rgba(168, 160, 152, 0.6);
+    border-radius: 3px;
 }
 
 //small screen
 @media (max-width: 40em) {
+    #homePageHeader {
+        .headerCopy {
+            h1 {
+                font-size: 30px
+            }
+            h2 {
+                font-size: 25px
+            }
+        }
+        .morrisCounty {
+            span {
+                margin: 0 3rem;
+            }
+        }
+    }
     .contntThumbnailContainer {
         padding: 5rem 2rem 0 2rem;
         flex-direction: column;
@@ -116,7 +145,12 @@
         }
     }
     .aboutMe {
-        padding: 5rem 2rem 0 2rem;
+        margin: 2rem;
+        padding: 3rem 2rem;
+    }
+    footer {
+        font-family: $noto-font;
+        padding: 0 0 1rem 2rem;
     }
 }
 //medium screen
@@ -129,6 +163,10 @@
         }
     }
     .aboutMe {
-        padding: 5rem 6rem 0 6rem;
+        margin: 3rem 6rem;
+        padding: 3rem 6rem;
+    }
+    footer {
+        padding: 0 0 1rem 6rem;
     }
 }
