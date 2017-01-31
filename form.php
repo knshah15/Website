@@ -7,5 +7,6 @@ if ($_POST['submit']) {
         Phone: ".$_POST['phone']."
         City: ".$_POST['city']."
         LearningGoals: ".$_POST['comment']);
+        header('Location: thank-you.html');
 }
 ?>
