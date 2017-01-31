@@ -138,6 +138,12 @@
   border-radius: 3px;
 }
 
+.contactPhone:hover, a.contactPhone:visited, .contactPhone:link, .contactPhone:active { 
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
 @media (max-width: 40em) {
   /* line 127, ../sass/customStyle.scss */
   #homePageHeader .headerCopy h1 {
