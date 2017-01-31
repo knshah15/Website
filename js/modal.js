@@ -105,7 +105,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
             </div>
 
             <div class="col-sm-12">
-                <button type="button" class="btn btn-primary">CONTACT TO SCHEDULE TRAINING</button>
+                <button type="button" onclick="openForm()" class="btn btn-primary">CONTACT TO SCHEDULE TRAINING</button>
             </div>
          `
          document.getElementById('modalBodyContent').appendChild(divContent);
@@ -159,7 +159,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
            </div>
 
            <div class="col-sm-12">
-               <button type="button" class="btn btn-primary">CONTACT TO SCHEDULE TRAINING</button>
+               <button type="button" onclick="openForm()" class="btn btn-primary">CONTACT TO SCHEDULE TRAINING</button>
            </div>
         `
         document.getElementById('modalBodyContent').appendChild(divContent);
@@ -213,7 +213,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
            </div>
 
            <div class="col-sm-12">
-               <button type="button" class="btn btn-primary">CONTACT TO SCHEDULE TRAINING</button>
+               <button type="button" onclick="openForm()" class="btn btn-primary">CONTACT TO SCHEDULE TRAINING</button>
            </div>
         `
         document.getElementById('modalBodyContent').appendChild(divContent);
@@ -247,7 +247,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
            </div>
 
            <div class="col-sm-12">
-               <button type="button" class="btn btn-primary">CONTACT TO SCHEDULE TRAINING</button>
+               <button type="button" onclick="openForm()" class="btn btn-primary">CONTACT TO SCHEDULE TRAINING</button>
            </div>
         `
         document.getElementById('modalBodyContent').appendChild(divContent);
@@ -301,7 +301,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
            </div>
 
            <div class="col-sm-12">
-               <button type="button" class="btn btn-primary">CONTACT TO SCHEDULE TRAINING</button>
+               <button type="button" onclick="openForm()" class="btn btn-primary">CONTACT TO SCHEDULE TRAINING</button>
            </div>
         `
         document.getElementById('modalBodyContent').appendChild(divContent);
@@ -328,10 +328,14 @@ $('#exampleModal').on('show.bs.modal', function (event) {
            </div>
 
            <div class="col-sm-12">
-               <button type="button" class="btn btn-primary">CONTACT TO SCHEDULE TRAINING</button>
+               <button type="button" onclick="openForm()" class="btn btn-primary">CONTACT TO SCHEDULE TRAINING</button>
            </div>
         `
         document.getElementById('modalBodyContent').appendChild(divContent);
       break;
   }
 })
+
+function openForm() {
+    window.open ('form.html','_self',false)
+}
