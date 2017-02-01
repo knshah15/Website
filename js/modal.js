@@ -1,67 +1,361 @@
-$('#exampleModal').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget); // Button that triggered the modal
-    var recipient = button.data('whatever'); // Extract info from data-* attributes
-    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-    var modal = $(this);
-    var excelModalTitle = "Practical Microsoft Excel Training (Mac or PC)";
-    var powerpointModalTitle = "Practical Microsoft PowerPoint Training (Mac or PC)";
-    var wordModalTitle = "Practical Microsoft Word Training (Mac or PC)";
-    var partnershipModalTitle = "Corporate Training Services";
-    var computerskillsModalTitle = "Computer Essentials, Website Creation and Online Marketing";
-    var careerModalTitle = "Does Your Resume Standout?";
-    var modalBodyContent = document.getElementById('modalBodyContent');
-    switch (recipient) {
-        case 'excel':
-            modal.find('.modal-title').text(excelModalTitle);
-            modalBodyContent.innerHTML = '';
-            var divContent = document.createElement('div');
-            divContent.className = 'row';
-            divContent.innerHTML = "\n <div class=\"col-sm-12\"><p class=\"modal-body-content\">Practical Microsoft Excel training focused on real-world business projects and assignments. Here are a sample of topic areas I can help you master.</p></div>\n <div class=\"col-sm-6\">\n <div class=\"panel panel-default\">\n <div class=\"panel-heading\"><h3 class=\"panel-title\">Beginner Topics</h3></div>\n <ul class=\"list-group\">\n <li class=\"list-group-item\">Spreadsheet Fundamentals</li>\n <li class=\"list-group-item\">Navigating Excel</li>\n <li class=\"list-group-item\">Entering Data</li>\n <li class=\"list-group-item\">Basic Formatting</li>\n <li class=\"list-group-item\">Basic Formulas</li>\n </ul>\n </div>\n </div>\n\n <div class=\"col-sm-6\"><div class=\"panel panel-default\"><div class=\"panel-heading\"><h3 class=\"panel-title\">Presenting Information</h3></div><ul class=\"list-group\"><li class=\"list-group-item\">Building Charts</li><li class=\"list-group-item\">Building Graphs</li><li class=\"list-group-item\">Formatting Spreadsheets</li>\n <li class=\"list-group-item\">Cell Formatting</li>\n <li class=\"list-group-item\">Conditional Formatting</li>\n </ul>\n </div>\n </div>\n\n <div class=\"col-sm-6\">\n <div class=\"panel panel-default\">\n <div class=\"panel-heading\"><h3 class=\"panel-title\">Working with Formulas</h3></div>\n <ul class=\"list-group\">\n <li class=\"list-group-item\">Commonly-Used Excel Formulas</li>\n <li class=\"list-group-item\">\"IF\" Statements</li>\n <li class=\"list-group-item\">VLOOKUP and HLOOKUP</li>\n <li class=\"list-group-item\">Complex Formulas</li>\n <li class=\"list-group-item\">Absolute and Relative References</li>\n </ul>\n </div>\n </div>\n\n <div class=\"col-sm-6\">\n <div class=\"panel panel-default\">\n <div class=\"panel-heading\"><h3 class=\"panel-title\">Data Analysis</h3></div>\n <ul class=\"list-group\">\n <li class=\"list-group-item\">Sorting and Filtering Data</li>\n <li class=\"list-group-item\">Working with Large Data Sets</li>\n <li class=\"list-group-item\">Pivot Tables</li>\n <li class=\"list-group-item\">Excel Data Analysis Toolpak</li>\n <li class=\"list-group-item\">Regression and Statistical Analysis</li>\n </ul>\n </div>\n </div>\n\n <div class=\"col-sm-6\">\n <div class=\"panel panel-default\">\n <div class=\"panel-heading\"><h3 class=\"panel-title\">Budgeting, Finance and Accounting</h3></div>\n <ul class=\"list-group\">\n <li class=\"list-group-item\">Building Financial Statements</li>\n <li class=\"list-group-item\">Financial Modeling</li>\n <li class=\"list-group-item\">Building Projections</li>\n <li class=\"list-group-item\">Formatting and Reporting</li>\n <li class=\"list-group-item\">Financial Analysis</li>\n </ul>\n </div>\n </div>\n\n <div class=\"col-sm-6\">\n <div class=\"panel panel-default\">\n <div class=\"panel-heading\"><h3 class=\"panel-title\">Advanced Topics</h3></div>\n <ul class=\"list-group\">\n <li class=\"list-group-item\">Excel Macros</li>\n <li class=\"list-group-item\">Visual Basic</li>\n <li class=\"list-group-item\">Iteration and Circular References</li>\n <li class=\"list-group-item\">Advanced Lookups (Index, Match, Offset)</li>\n <li class=\"list-group-item\">Advanced Formulas</li>\n </ul>\n </div>\n </div>\n\n <div class=\"col-sm-12\">\n <button type=\"button\" onclick=\"openForm()\" class=\"btn btn-primary\">CONTACT TO SCHEDULE TRAINING</button>\n </div>\n ";
-            document.getElementById('modalBodyContent').appendChild(divContent);
-            break;
-        case 'powerpoint':
-            modal.find('.modal-title').text(powerpointModalTitle);
-            modalBodyContent.innerHTML = '';
-            var divContent = document.createElement('div');
-            divContent.className = 'row';
-            divContent.innerHTML = "\n <div class=\"col-sm-12\">\n <p class=\"modal-body-content\">Practical Microsoft PowerPoint training that covers the basics and goes beyond so you can create powerful, effective presentations for a wide range of business purposes. Here are a sample of topic areas I can help you master.</p>\n </div>\n <div class=\"col-sm-12\">\n <div class=\"panel panel-default\">\n <div class=\"panel-heading\"><h3 class=\"panel-title\">Beginner Topics</h3></div>\n <ul class=\"list-group\">\n <li class=\"list-group-item\">Creating basic presentations</li>\n <li class=\"list-group-item\">Working with templates</li>\n <li class=\"list-group-item\">Using textboxes, shapes and graphics</li>\n <li class=\"list-group-item\">Adding animations</li>\n <li class=\"list-group-item\">Proper use of text and styles</li>\n </ul>\n </div>\n </div>\n\n <div class=\"col-sm-12\">\n <div class=\"panel panel-default\">\n <div class=\"panel-heading\"><h3 class=\"panel-title\">Sales and Business Presentations</h3></div>\n <ul class=\"list-group\">\n <li class=\"list-group-item\">Choosing the right format for your audience</li>\n <li class=\"list-group-item\">Structuring your presentation</li>\n <li class=\"list-group-item\">Writing powerful headings and content</li>\n <li class=\"list-group-item\">Incorporating charts and data</li>\n <li class=\"list-group-item\">Aligning and formatting for a clean, professional look</li>\n </ul>\n </div>\n </div>\n\n <div class=\"col-sm-12\">\n <div class=\"panel panel-default\">\n <div class=\"panel-heading\"><h3 class=\"panel-title\">Brochures and Marketing Materials</h3></div>\n <ul class=\"list-group\">\n <li class=\"list-group-item\">Creating custom business themes for your brand</li>\n <li class=\"list-group-item\">Writing content that speaks to your audience</li>\n <li class=\"list-group-item\">Highlighting your value proposition</li>\n <li class=\"list-group-item\">Using shapes and objects in creative ways</li>\n <li class=\"list-group-item\">Best-practices for fonts, colors and content</li>\n </ul>\n </div>\n </div>\n\n <div class=\"col-sm-12\">\n <button type=\"button\" onclick=\"openForm()\" class=\"btn btn-primary\">CONTACT TO SCHEDULE TRAINING</button>\n </div>\n ";
-            document.getElementById('modalBodyContent').appendChild(divContent);
-            break;
-        case 'word':
-            modal.find('.modal-title').text(wordModalTitle);
-            modalBodyContent.innerHTML = '';
-            var divContent = document.createElement('div');
-            divContent.className = 'row';
-            divContent.innerHTML = "\n <div class=\"col-sm-12\">\n <p class=\"modal-body-content\">Practical Microsoft Word training that covers the basics and goes beyond to teach you the guidelines and best-practices to create professional business documents. Here are a sample of topic areas I can help you master.</p>\n </div>\n <div class=\"col-sm-12\">\n <div class=\"panel panel-default\">\n <div class=\"panel-heading\"><h3 class=\"panel-title\">Beginner Topics</h3></div>\n <ul class=\"list-group\">\n <li class=\"list-group-item\">Overview of functionality to get you going</li>\n <li class=\"list-group-item\">Working with fonts, colors and text styles</li>\n <li class=\"list-group-item\">Inserting shapes and graphics</li>\n <li class=\"list-group-item\">Final touches: page numbers, contents and more</li>\n <li class=\"list-group-item\">Formatting best-practices and common pitfalls</li>\n </ul>\n </div>\n </div>\n\n <div class=\"col-sm-12\">\n <div class=\"panel panel-default\">\n <div class=\"panel-heading\"><h3 class=\"panel-title\">Business Cases and Proposals</h3></div>\n <ul class=\"list-group\">\n <li class=\"list-group-item\">Structuring your document</li>\n <li class=\"list-group-item\">Know the important sections to include</li>\n <li class=\"list-group-item\">Incorporating financial forecasts and data</li>\n <li class=\"list-group-item\">Working with charts and graphs in Word</li>\n <li class=\"list-group-item\">Using a table of contents and applying polish</li>\n </ul>\n </div>\n </div>\n\n <div class=\"col-sm-12\">\n <div class=\"panel panel-default\">\n <div class=\"panel-heading\"><h3 class=\"panel-title\">Brochures and Marketing Materials</h3></div>\n <ul class=\"list-group\">\n <li class=\"list-group-item\">Creating impactful brochures and datasheets</li>\n <li class=\"list-group-item\">Writing content that speaks to your audience</li>\n <li class=\"list-group-item\">Highlighting your value proposition</li>\n <li class=\"list-group-item\">Formatting for brochures, flyers and mailers</li>\n <li class=\"list-group-item\">Best-practices for fonts, colors and content</li>\n </ul>\n </div>\n </div>\n\n <div class=\"col-sm-12\">\n <button type=\"button\" onclick=\"openForm()\" class=\"btn btn-primary\">CONTACT TO SCHEDULE TRAINING</button>\n </div>\n ";
-            document.getElementById('modalBodyContent').appendChild(divContent);
-            break;
-        case 'career':
-            modal.find('.modal-title').text(careerModalTitle);
-            modalBodyContent.innerHTML = '';
-            var divContent = document.createElement('div');
-            divContent.className = 'row';
-            divContent.innerHTML = "\n <div class=\"col-sm-12\">\n <p class=\"modal-body-content\">Recruiters and hiring managers receive hundreds of resumes for positions. Make sure that yours stands out and gets selected. Once you start applying, be prepared to maximize your chance of getting the job. Here is how Skill Seeker can help you with both resumes and interview preparation.</p>\n </div>\n <div class=\"col-sm-12\">\n <div class=\"panel panel-default\">\n <div class=\"panel-heading\"><h3 class=\"panel-title\">Resume Preparation</h3></div>\n <ul>\n <li>Working with Skill Seeker to create a strong, professional resume that positions you in the best way is easy. First, we will meet in person or speak over the phone to go over your background, current resume (if you have one), and the jobs you are interested in.</li>\n <li>After we speak, I will incorporate everything I learned about your background and goals and create a resume template that you can use for years to come. If you have any feedback or edits on the final product, I will be happy to incorporate them so that you are satisfied.</li>\n </ul>\n\n <div class=\"panel-heading\"><h3 class=\"panel-title\">Interview Preparation</h3></div>\n <div class=\"panel-body\"><p>Preparation and practice are the keys to successfully nailing a job interview. I will work with you, one-on-one, to coach you for your upcoming interviewing. Here is my approach for preparing my clients for interviews:</p></div>\n <ul>\n <li>Review best-practices and strategies for interviewing</li>\n <li>Review of the companies and roles you are interested in</li>\n <li>Mock interviews, customized to the role and company you are interest in</li>\n <li>Practice with dozens of interview questions until you feel fully prepared</li>\n </ul>\n </div>\n </div>\n\n <div class=\"col-sm-12\">\n <button type=\"button\" onclick=\"openForm()\" class=\"btn btn-primary\">CONTACT TO SCHEDULE TRAINING</button>\n </div>\n ";
-            document.getElementById('modalBodyContent').appendChild(divContent);
-            break;
-        case 'computerskills':
-            modal.find('.modal-title').text(computerskillsModalTitle);
-            modalBodyContent.innerHTML = '';
-            var divContent = document.createElement('div');
-            divContent.className = 'row';
-            divContent.innerHTML = "\n <div class=\"col-sm-12\">\n <p class=\"modal-body-content\">Computer and web training to get you comfortable with computing. Once we cover the basics, we can dive more deeply into technologies you are interested in, like creating your own website and marketing it online.</p>\n </div>\n <div class=\"col-sm-12\">\n <div class=\"panel panel-default\">\n <div class=\"panel-heading\"><h3 class=\"panel-title\">Basic Use of Mac or PC</h3></div>\n <ul class=\"list-group\">\n <li class=\"list-group-item\">Setup and configuration</li>\n <li class=\"list-group-item\">Overview of main components</li>\n <li class=\"list-group-item\">Running programs</li>\n <li class=\"list-group-item\">Using browsers and downloading programs</li>\n <li class=\"list-group-item\">Essential troubleshooting</li>\n </ul>\n </div>\n </div>\n\n <div class=\"col-sm-12\">\n <div class=\"panel panel-default\">\n <div class=\"panel-heading\"><h3 class=\"panel-title\">Setting up Websites</h3></div>\n <ul class=\"list-group\">\n <li class=\"list-group-item\">Free tools to create your website</li>\n <li class=\"list-group-item\">Choosing a domain</li>\n <li class=\"list-group-item\">Hosting your site</li>\n <li class=\"list-group-item\">Customizing your site</li>\n <li class=\"list-group-item\">Working with HTML and CSS</li>\n </ul>\n </div>\n </div>\n\n <div class=\"col-sm-12\">\n <div class=\"panel panel-default\">\n <div class=\"panel-heading\"><h3 class=\"panel-title\">Marketing Your Business Online</h3></div>\n <ul class=\"list-group\">\n <li class=\"list-group-item\">Digital marketing basics</li>\n <li class=\"list-group-item\">Showing up in maps and search results</li>\n <li class=\"list-group-item\">Running online advertisements</li>\n <li class=\"list-group-item\">Measuring the performance of your site</li>\n <li class=\"list-group-item\">Best practices for content</li>\n </ul>\n </div>\n </div>\n\n <div class=\"col-sm-12\">\n <button type=\"button\" onclick=\"openForm()\" class=\"btn btn-primary\">CONTACT TO SCHEDULE TRAINING</button>\n </div>\n ";
-            document.getElementById('modalBodyContent').appendChild(divContent);
-            break;
-        case 'partnership':
-            modal.find('.modal-title').text(partnershipModalTitle);
-            modalBodyContent.innerHTML = '';
-            var divContent = document.createElement('div');
-            divContent.className = 'row';
-            divContent.innerHTML = "\n <div class=\"col-sm-12\">\n <p class=\"modal-body-content\">I partner with local businesses to provide cost-effective group training. I will work with you to create a customized training program and deliver the training at your offices. Please see below for a sample of training areas.</p>\n </div>\n <div class=\"col-sm-12\">\n <div class=\"panel panel-default\">\n <div class=\"panel-heading\"><h3 class=\"panel-title\">Training for Businesses</h3></div>\n <ul class=\"list-group\">\n <li class=\"list-group-item\">Data Analysis in Microsoft Excel</li>\n <li class=\"list-group-item\">Presentation and Formatting in Microsoft Excel</li>\n <li class=\"list-group-item\">Formulas, Macros and Advanced Tools in Microsoft Excel</li>\n <li class=\"list-group-item\">Financial Forecasting and Planning in Microsoft Excel</li>\n </ul>\n </div>\n </div>\n\n <div class=\"col-sm-12\">\n <button type=\"button\" onclick=\"openForm()\" class=\"btn btn-primary\">CONTACT TO SCHEDULE TRAINING</button>\n </div>\n ";
-            document.getElementById('modalBodyContent').appendChild(divContent);
-            break;
-    }
-});
-function openForm() {
-    window.open('form.html', '_self', false);
-}
+;(function(document){
+// ---------------------------------------------------------------------
+
+    // ----------------------------
+    // Templating functions
+    // ----------------------------
+    
+    var compileContactButton = function(text){
+        return [
+            '<div class="col-sm-12">',
+                '<button type="button" class="btn btn-primary contactBtn">',
+                    (text.toUpperCase()),
+                '</button>',
+            '</div>'
+        ].join('')
+    };
+
+    var compileContentHeader = function(contentHeader){
+        return [
+            '<div class="col-sm-12">',
+                  '<p class="modal-body-content">',
+                      (contentHeader),
+                  '<p>',
+            '</div>'
+        ].join('')
+    };
+
+    var compileContentGroup = function(contentGroupColWidth, contentGroupTitle, contentGroupSubTitle, contentGroupEntries){
+        return [
+            '<div class="col-sm-'+(contentGroupColWidth)+'">',
+                '<div class="panel panel-default">',
+                    '<div class="panel-heading">',
+                        '<h3 class="panel-title">'+(contentGroupTitle)+'</h3>',
+                         (function(){
+                             return contentGroupSubTitle ? '<p style="margin-top:6px; margin-left:2px;">'+(contentGroupSubTitle)+'<p>' : ''
+                         }()),
+                    '</div>',
+                    '<ul class="list-group">',
+                        (contentGroupEntries.map(function(contentGroupEntry){
+                            return '<li class="list-group-item">'+(contentGroupEntry)+'</li>' 
+                        }).join('')),
+                    '</ul>',                              
+                '</div>',           
+            '</div>'
+        ].join('')
+    };
+
+    var compileContentGroups = function(contentGroupColWidth, contentGroups){
+        return contentGroups.map(function(contentGroup){
+            return compileContentGroup(contentGroupColWidth, contentGroup.title, contentGroup.subTitle, contentGroup.entries);
+        }).join('')
+    };
+
+    // ----------------------------
+    // Content Store
+    // ----------------------------
+    var contentStore = {
+        excel : {
+            header : 'Practical Microsoft Excel Training (Mac or PC)',
+            subHeader : 'Practical Microsoft Excel training focused on real-world business projects and assignments. Here are a sample of topic areas I can help you master.',
+            contactBtn : 'Contact to Schedule Training',
+            contentGroupColWidth : '6',
+            contentGroups : [
+                {
+                    title : 'Beginner Topics',
+                    entries : [
+                        'Spreadsheet Fundamentals',
+                        'Navigating Excel',
+                        'Entering Data',
+                        'Basic Formatting',
+                        'Basic Formulas'
+                    ]
+                },
+                {
+                    title : 'Presenting Information',
+                    entries : [
+                        'Building Charts',
+                        'Building Graphs',
+                        'Formatting Spreadsheets',
+                        'Cell Formatting',
+                        'Conditional Formatting'
+                    ]
+                },
+                {
+                    title : 'Working with Formulas',
+                    entries : [
+                        'Commonly-Used Excel Formulas',
+                        '"IF" Statements',
+                        'VLOOKUP and HLOOKUP',
+                        'Complex Formulas',
+                        'Absolute and Relative References'
+                    ]
+                },
+                {
+                    title : 'Data Analysis',
+                    entries : [
+                        'Sorting and Filtering Data',
+                        'Working with Large Data Sets',
+                        'Pivot Tables',
+                        'Excel Data Analysis Toolpak',
+                        'Regression and Statistical Analysis'
+                    ]
+                },
+                {
+                    title : 'Budgeting, Finance and Accounting',
+                    entries : [
+                        'Building Financial Statements',
+                        'Financial Modeling',
+                        'Building Projections',
+                        'Formatting and Reporting',
+                        'Financial Analysis'
+                    ]
+                },
+                {
+                    title : 'Advanced Topics',
+                    entries : [
+                        'Excel Macros',
+                        'Visual Basic',
+                        'Iteration and Circular References',
+                        'Advanced Lookups (Index, Match, Offset)',
+                        'Advanced Formulas'    
+                    ]
+                }
+            ]
+        },
+        powerpoint : {
+            header : 'Practical Microsoft PowerPoint Training (Mac or PC)', 
+            subHeader : 'Practical Microsoft PowerPoint training that covers the basics and goes beyond so you can create powerful, effective presentations for a wide range of business purposes. Here are a sample of topic areas I can help you master.',
+            contactBtn : 'Contact to Schedule Training',
+            contentGroupColWidth : '12',
+            contentGroups : [
+                {
+                    title : 'Beginner Topics',
+                    entries : [
+                        'Creating basic presentations',
+                        'Working with templates',
+                        'Using textboxes, shapes and graphics',
+                        'Adding animations',
+                        'Proper use of text and styles'
+                    ]
+                },
+                {
+                    title : 'Sales and Business Presentations',
+                    entries : [
+                        'Choosing the right format for your audience',
+                        'Structuring your presentation',
+                        'Writing powerful headings and content',
+                        'Incorporating charts and data',
+                        'Aligning and formatting for a clean, professional look'
+                    ]
+                },
+                {
+                    title : 'Brochures and Marketing Materials',
+                    entries : [
+                        'Creating custom business themes for your brand',
+                        'Writing content that speaks to your audience',
+                        'Highlighting your value proposition',
+                        'Using shapes and objects in creative ways',
+                        'Best-practices for fonts, colors and content'   
+                    ]
+                }
+            ]
+        },
+        word : {
+            header : 'Practical Microsoft Word Training (Mac or PC)',
+            subHeader : 'Practical Microsoft Word training that covers the basics and goes beyond to teach you the guidelines and best-practices to create professional business documents. Here are a sample of topic areas I can help you master.',
+            contactBtn : 'Contact to Schedule Training',
+            contentGroupColWidth : '12',
+            contentGroups : [
+                {
+                    title : 'Beginner Topics',
+                    entries : [
+                        'Overview of functionality to get you going',
+                        'Working with fonts, colors and text styles',
+                        'Inserting shapes and graphics',
+                        'Final touches: page numbers, contents and more',
+                        'Formatting best-practices and common pitfalls'
+                    ]
+                },
+                {
+                    title : 'Business Cases and Proposals',
+                    entries : [
+                        'Structuring your document',
+                        'Know the important sections to include',
+                        'Incorporating financial forecasts and data',
+                        'Working with charts and graphs in Word',
+                        'Using a table of contents and applying polish'
+                    ]
+                },
+                {
+                    title : 'Brochures and Marketing Materials',
+                    entries : [
+                        'Creating impactful brochures and datasheets',
+                        'Writing content that speaks to your audience',
+                        'Highlighting your value proposition',
+                        'Formatting for brochures, flyers and mailers',
+                        'Best-practices for fonts, colors and content'
+                    ]
+                }
+            ]
+        },
+        career : {
+            header : 'Does Your Resume Standout?',
+            subHeader : 'Recruiters and hiring managers receive hundreds of resumes for positions. Make sure that yours stands out and gets selected. Once you start applying, be prepared to maximize your chance of getting the job. Here is how Skill Seeker can help you with both resumes and interview preparation.',
+            contactBtn : 'Contact to Schedule Training',
+            contentGroupColWidth : '12',
+            contentGroups : [
+                {
+                    title : 'Resume Preparation',
+                    entries : [
+                        'Working with Skill Seeker to create a strong, professional resume that positions you in the best way is easy. First, we will meet in person or speak over the phone to go over your background, current resume (if you have one), and the jobs you are interested in.',
+                        'After we speak, I will incorporate everything I learned about your background and goals and create a resume template that you can use for years to come. If you have any feedback or edits on the final product, I will be happy to incorporate them so that you are satisfied.'
+                    ]
+                },
+                {
+                    title : 'Interview Preparation',
+                    subTitle : 'Preparation and practice are the keys to successfully nailing a job interview. I will work with you, one-on-one, to coach you for your upcoming interviewing. Here is my approach for preparing my clients for interviews:',
+                    entries : [
+                        'Review best-practices and strategies for interviewing',
+                        'Review of the companies and roles you are interested in',
+                        'Mock interviews, customized to the role and company you are interest in',
+                        'Practice with dozens of interview questions until you feel fully prepared'
+                    ]
+                }
+            ]
+        },
+        computerskills : {
+            header : 'Computer Essentials, Website Creation and Online Marketing',
+            subHeader : 'Computer and web training to get you comfortable with computing. Once we cover the basics, we can dive more deeply into technologies you are interested in, like creating your own website and marketing it online.',
+            contactBtn : 'Contact to Schedule Training',
+            contentGroupColWidth : '12',
+            contentGroups : [
+                {
+                    title : 'Basic Use of Mac or PC',
+                    entries : [
+                        'Setup and configuration',
+                        'Overview of main components',
+                        'Running programs',
+                        'Using browsers and downloading programs',
+                        'Essential troubleshooting'
+                    ]
+                },
+                {
+                    title : 'Setting up Websites',
+                    entries : [
+                        'Free tools to create your website',
+                        'Choosing a domain',
+                        'Hosting your site',
+                        'Customizing your site',
+                        'Working with HTML and CSS'
+                    ]
+                },
+                {
+                    title : 'Marketing Your Business Online',
+                    entries : [
+                        'Digital marketing basics',
+                        'Showing up in maps and search results',
+                        'Running online advertisements',
+                        'Measuring the performance of your site',
+                        'Best practices for content'
+                    ]
+                }
+            ]  
+        },
+        partnership : {
+            header : 'Corporate Training Services',
+            subHeader : 'I partner with local businesses to provide cost-effective group training. I will work with you to create a customized training program and deliver the training at your offices. Please see below for a sample of training areas.',
+            contactBtn : 'Contact to Schedule Training',
+            contentGroupColWidth : '12',
+            contentGroups : [
+                {
+                    title : 'Training for Businesses',
+                    entries : [
+                        'Data Analysis in Microsoft Excel',
+                        'Presentation and Formatting in Microsoft Excel',
+                        'Formulas, Macros and Advanced Tools in Microsoft Excel',
+                        'Financial Forecasting and Planning in Microsoft Excel'
+                    ]
+                }
+            ]
+        }
+    };
+
+
+    // ----------------------------
+    // DOM API Interactions
+    // ----------------------------
+    var getChosenTrainingCategory = function(event){
+        return $(event.relatedTarget).data('whatever');
+    };
+    
+    var setModalHeader = function(modalNode, header){
+        modalNode.find('.modal-title').text(header);
+    };
+
+    var setModalContent = function(contentContainerNode, contentNode, contentHTML){
+        contentContainerNode.innerHTML = '';
+        contentNode.innerHTML = '';
+        contentNode.innerHTML = contentHTML;
+        contentContainerNode.appendChild(contentNode);
+    };
+
+    var setContactBtnEventHandler = function(modalNode){
+        modalNode.on('click', '.contactBtn', function(e) {
+            e.preventDefault();
+            window.open('form.html', '_self', false);
+        });
+    };
+
+    var renderModalContent = function(modalNode, contentContainerNode, contentNode, modalHeader, contentHTML){
+        setModalHeader(modalNode, modalHeader);
+        setModalContent(contentContainerNode, contentNode, contentHTML);
+    };
+
+    var setModalEventHandler = function(modalNode){
+        var contentCache = {};
+        var contentContainerNode = document.getElementById('modalBodyContent');
+        var contentNode = document.createElement('div');
+        contentNode.className = 'row';
+
+        modalNode.on('show.bs.modal', function(event){
+            var trainingCategory = getChosenTrainingCategory(event);
+
+            if (!contentCache[trainingCategory]) {
+                var categoryContentStore = contentStore[trainingCategory];
+                var contentHeader = compileContentHeader(categoryContentStore.subHeader);
+                var contentGroups = compileContentGroups(
+                    categoryContentStore.contentGroupColWidth,
+                    categoryContentStore.contentGroups
+                );
+                var contactBtn = compileContactButton(categoryContentStore.contactBtn);
+
+                contentCache[trainingCategory] = {};
+                contentCache[trainingCategory].modalHeader = categoryContentStore.header;
+                contentCache[trainingCategory].contentHTML = contentHeader + contentGroups + contactBtn;
+            }
+
+            renderModalContent(
+                $(this),
+                contentContainerNode,
+                contentNode,
+                contentCache[trainingCategory].modalHeader,
+                contentCache[trainingCategory].contentHTML
+            );
+        });
+    };
+    
+
+    // ----------------------------
+    // Init
+    // ----------------------------
+    var init = function(){
+        var modalNode = $('#exampleModal');  
+        setModalEventHandler(modalNode);
+        setContactBtnEventHandler(modalNode);
+    };
+
+
+    init();
+// ---------------------------------------------------------------------
+}(document));
